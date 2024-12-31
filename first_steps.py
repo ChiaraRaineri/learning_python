@@ -158,6 +158,52 @@ print(len(lista))  # quante parole ci sono nella lista
 
 
 
+######
+
+# Boolean
+
+x = True
+y = False
+
+
+if 5 < 10:
+    print("Sono minore di 10")
+else:
+    print("Sono maggiore di 10")
+
+
+
+print(bool(1))  # Dice che è true, mentre per 0 è false
+
+# I valori che danno sempre false sono:
+    # bool(False)
+    # bool(None)
+    # bool(0)
+    # bool("")
+    # bool(())
+    # bool([])
+    # bool({})
+
+
+##
+
+
+pane = 0
+
+if pane:                                      # se il pane esiste (non 0) 
+    print("non andare al supermercato")
+else:
+    print("uscire a prendere il pane")
+
+
+lista = ["pane", "latte"]
+
+if lista: 
+    print("andare al supermercato")
+else:
+    print("non andare al supermercato")
+
+
 
 
 
