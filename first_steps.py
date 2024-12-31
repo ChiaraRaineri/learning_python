@@ -206,6 +206,50 @@ else:
 
 
 
+#######
+
+# Operazioni aritmetiche 
+
+
+# +
+# - 
+# / 
+# *
+# % (modulo, dà il resto della divisione) 
+# ** (potenza) 
+# // (floor division, risultato divisione arrotondato per difetto)
+
+x = 5
+y = 9
+
+
+print(x / y)
+
+
+# La precedenza ce l'hanno * e /, poi + e -
+
+
+### Operatori di assegnamento (ce ne sono altre più complesse)
+
+# Invece di scrivere questo
+x = x + 2
+#Scrivo questo
+x += 2    # Vale per tutti gli operatori
+
+print(x)
+
+
+
+
+# min, max, abs (absolute), pow (potenza)
+
+z = min(5, 10, 25)
+z = abs(-5)
+z = pow(4,3)
+
+print(z)
+
+
 
 
 
