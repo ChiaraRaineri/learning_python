@@ -1,8 +1,8 @@
 """just say something to avoid problems"""
 
-#messaggio = input("inserisci qualcosa:")
+messaggio = input("inserisci qualcosa:")
 
-#print(messaggio)
+print(messaggio)
 
 #######
 
