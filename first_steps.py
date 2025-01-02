@@ -251,6 +251,87 @@ print(z)
 
 
 
+#######
 
+# if
+
+x = 11
+
+if 5 < 10:
+    print("5 è minore di 10")  # se è falso e non metto else non mi manda a schermo niente 
+# le cose fanno riferimento all'if solo se sono indentate (sennò si è fuori dall'if)
+
+if x == 10:  # x uguale a 10, diverso è !=, maggiore uguale >=, minore uguale <=
+    print("condizione verificata")
+else:
+    print("condizione non verificata")
+
+
+
+if x < 10: 
+    print("minore di 10")
+elif x == 10:
+    print("uguale a 10")  # ulteriore condizione (posso mettere quanti elif voglio, mentre if e else sono solo 1)
+else:
+    print("maggiore di 10")
+
+
+
+
+if 10 <= x <= 20: 
+    print("compreso tra 10 e 20")
+
+
+
+
+# end, or, not
+
+if x > 10 and x < 20:
+    print("compreso tra 10 e 20")  # presuppone che entrambe le condizioni siano verificate
+
+
+x = 11
+y= 5
+
+if x > 10 and y > 10:
+    print("condizione verificata")
+else:
+    print("non verificata")
+
+
+if x > 10 or y > 10:
+    print("condizione verificata")  # almeno una è verificata
+else:
+    print("non verificata")
+
+
+
+if not(x < 10): 
+    print("condizione verificata")  # è una negazione
+else:
+    print("non verificata")
+
+
+##
+
+# scorciatoia
+
+if x > 10: print ("è maggiore di 10")  # si può fare solo se c'è una sola istruzione dopo i due punti
+
+print("è maggiore di 10") if x > 10 else print("è minore di 10")
+
+
+##
+
+# if innestati o annidati
+
+# es. accetto solo i numeri pari (il resto della divisione deve dare 0)
+
+if x % 2 == 0:  # numero pari
+    print("numero pari")
+    if(x < 10):
+        print("numero pari e minore di 10")
+else: 
+    print("numero dispari, non mi interessa se è maggiore o minore di 10")
 
 
