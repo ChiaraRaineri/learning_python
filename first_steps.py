@@ -335,3 +335,33 @@ else:
     print("numero dispari, non mi interessa se è maggiore o minore di 10")
 
 
+# esercizi
+
+numero = int(input("inserisci un numero intero: "))  # chiedi all'utente di inserire un numero intero
+
+if numero % 2 == 0:  # il numero deve essere pari
+    print("il numero è pari")
+else:
+    print("il numero è dispari")
+
+#
+
+numero = int(input("inserisci un numero intero tra 1 e 10: "))
+
+if 1 <= numero <= 10: 
+    print("il numero è valido")
+else:
+    print("il numero non è valido")
+
+#
+
+lettera = input("inserisci una lettera: ")
+
+if lettera.lower() in "aeiou":   # con lower anche se mette una lettera maiuscola lo legge lo stesso
+    print("la lettera è una volcale")
+else:
+    print("la lettera non è una vocale")
+
+#
+
+
