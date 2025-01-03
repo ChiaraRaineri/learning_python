@@ -441,3 +441,86 @@ while i < 6:
     if i == 3:
         break   # il loop si ferma a 3
     print(i)
+
+
+#
+
+# continua a chiedere all'utente di inserire un numero finché non è pari
+while True: 
+    numero = int(input("inserisci un numero intero: "))
+    if numero % 2 == 0:
+        break
+    else:
+        print("rifare")
+
+#
+
+# mostra i numeri da 1 a 100
+numero = 1
+while numero <= 100:
+    print(numero)
+    numero += 1
+
+#
+
+# continua a chiedere di inserire un numero finché non è multiplo di 3
+while True:
+    numero = int(input("inserisci un numero: "))
+    if numero % 3 == 0:
+        break
+    else:
+        print("non multiplo di 3, rifare")
+
+#
+
+while True:
+    parola = int(input("inserisci una parola: "))
+    if parola == "ciao":
+        break
+    else:
+        print("parola chiave errata, rifare")
+
+#
+
+# stampa numeri pari da 1 a 100
+numero = 1
+while 1 <= 100:
+    if numero % 2 == 0:
+        print(numero)
+    numero += 1
+
+#
+
+# ciclo finché la lettera non è una vocale
+while True:
+    lettera = input("inserisci una lettera: ")
+    if lettera not in "aiueo":
+        break
+
+#
+
+numero = 1
+while numero <= 1000:
+    if numero % 3 == 0 and numero % 25 == 0:
+        print(numero)
+    numero += 1
+
+#
+
+while True:
+    numero = int(input("inserisci numero intero: "))
+    if 1 <= numero <= 100:
+        break
+
+# 
+
+# ciclo finché parola non è lunga almeno 8 caratteri
+while True:
+    parola = int(input("inserisci una parola: "))
+    if len(parola) >= 8:
+        break
+    else:
+        print("parola troppo corta, rifare")
+
+
+
