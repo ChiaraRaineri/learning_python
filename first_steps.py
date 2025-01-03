@@ -416,3 +416,28 @@ else:
     else:
         print("no")
 
+
+######
+
+# While
+
+x = ["milano", "roma", "napoli"]
+
+# manda a schermo tutti i valori di x
+print(x[0])
+print(x[1])
+print(x[2])
+
+# oppure usiamo un ciclo while (loop)
+i = 0
+while i < 6:
+    print(i)
+    i += 1   # i conta il punto in cui siamo arrivati e voglio che i passi vengano mandati a schermo finché i è minore di 6 (non esce dal ciclo finché la condizione non è verificata)
+# += incrementa ogni volta i di 1
+
+i = 0
+while i < 6:
+    i += 1
+    if i == 3:
+        break   # il loop si ferma a 3
+    print(i)
