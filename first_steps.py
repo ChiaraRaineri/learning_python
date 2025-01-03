@@ -364,4 +364,17 @@ else:
 
 #
 
+numero = int(input("inserisci un numero intero: "))
+
+if 1 <= numero <= 10:
+    print("compreso tra 1 e 10")
+elif 11 <= numero <= 50:
+    print("compreso tra 11 e 50")
+elif numero >= 51:
+    print("maggiore di 51")
+else:
+    if numero == 0:
+        print("è zero")
+    else:
+        print("è negativo")
 
