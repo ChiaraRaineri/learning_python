@@ -378,3 +378,41 @@ else:
     else:
         print("è negativo")
 
+#
+
+colore = "rosso"
+taglia = "M"
+
+if colore == "nero" and (taglia == "M" or taglia == "L"):
+    print("compro maglietta")
+else:
+    print("non compro maglietta")
+
+#
+
+numero = int(input("inserisci numero: "))
+lettera = input("inserisci lettera: ")
+alfabeto_inglese = "abcdefghijklmnopqrstuvwxyz"
+
+
+if numero < 0 or len(lettera) > 1:  # length di lettera maggiore di 1
+    print("valori non validi")
+else:
+    print("ok")
+
+
+
+if numero < 0 or len(lettera) > 1:  # length di lettera maggiore di 1
+    print("valori non validi")
+else:
+    if numero < 10 and numero % 2 == 0 and lettera.lower() in "mpz":
+        print("ok")
+    elif 50 <= numero <= 70 and lettera not in "aeiou":
+        print("ok 2")
+    elif  numero <= len(alfabeto_inglese) - 1:
+        print("ok 3")  # minore o uguale alla lunghezza -1 dell'alfabeto inglese (la a ha indice 0)
+    elif  numero <= len(alfabeto_inglese) - 1 and alfabeto_inglese[numero] == lettera:  # metto sia la lettera che il suo indice corrispondente
+        print("ok 4")
+    else:
+        print("no")
+
