@@ -563,3 +563,35 @@ for riga in range(6):
 else:
     print("finito")
 
+
+# se il valore del range è pari lo mandiamo a schermo
+for valore in range(5, 100):  # 100 escluso
+    if valore % 2 == 0:
+        print(valore)
+
+#
+righe = range(1,9)
+colonne = "abcdefgh"
+
+for colonna in colonne:
+    for riga in righe:
+        print(colonna + str(riga))
+
+# parole con lunghezza pari, più le singole vocali che le compongono
+parole = ["rossi", "luca", "edoardo", "marco", "anna"]
+
+for parola in parole:
+    if len(parola) % 2 == 0:
+        print(parola)
+        for lettera in parola:
+            if lettera in "aeiou":
+                print(lettera)
+
+
+# mandare a schermo un numero di una lista solo se fa parte anche della seconda
+lista_uno = [1,2,3,4,5]
+lista_due = [10,5,6,7,2]
+
+for valore in lista_uno:
+    if valore in lista_due:
+        print(valore)
