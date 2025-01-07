@@ -523,4 +523,43 @@ while True:
         print("parola troppo corta, rifare")
 
 
+#######
+
+# Ciclo for
+
+
+# esempio con lista
+
+lista_citta = ["milano", "roma", "napoli"]
+
+for citta in lista_citta:  # per ogni città in lista_città, fai quanto segue (per ogni elemento in collezione di elementi fai quanto segue)
+    print(citta)
+
+# esempio con stringa
+
+stringa = "anguria"
+
+for lettera in stringa:  # l'elemento singolo lo chiamo come mi pare
+    print(lettera)
+
+# esempio con range
+
+for x in range(6):  # per x in un range di 6 valori (da 0 a 5)
+    print(x)
+
+
+for x in range(6):  
+    if x == 3:
+        continue
+    print(x)
+else:
+    print("fine")
+
+# si può anche innestare il loop (if nel for, o for nell'if)
+
+for riga in range(6):
+    for colonna in range(5):
+        print("(" + str(riga) + ":" + str(colonna) + ")")   # per ogni riga controlliamo la colonna
+else:
+    print("finito")
 
