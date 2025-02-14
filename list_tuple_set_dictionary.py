@@ -153,5 +153,80 @@ print(x)
 
 
 
+#######
+
+# Set
+# collezioni di dati non ordinate, non indicizzate, non modificabili e non permettono duplicati
+# parentesi graffe (alt gr + maiusc + [)
+
+# sia normale che mischiato
+
+x = {"milano", "roma", "napoli"}
+
+print(type(x))
+print(len(x))
+
+y = set(("milano", "roma", "napoli"))
+
+
+# non posso indicizzare perché i valori non sono ordinati
+print(x)  # ogni volta che faccio una run dà i valori in ordine casuale
+
+
+# per accedere a un set bisogna usare un loop
+
+for citta in x:
+    print(citta)  # anche qui a ogni run vengono visualizzati in modo casuale
+
+
+print("milano" in x)  # guardo se un elemento esiste nel set
+
+
+# aggiungere e rimuovere elementi
+
+x.add("venezia")  # aggiungere
+print(x)
+
+# unire un set a un altro
+y = {"venezia", "udine"}
+x.update(y)
+print(x)
+
+
+x.remove("milano")
+x.discard("roma")  # se metto un elemento che non esiste, remove dà errore e discard non restituisce niente
+
+x.pop()  # rimuove un elemento a caso
+
+x.clear()  # set vuoto
+
+del x   # x non esiste più
+
+
+# unioni
+
+x = {"milano", "roma", "napoli"}
+y = {"venezia", "udine", "roma"}
+
+# union() crea un nuovo set
+z = x.union(y)
+print(z)
+
+x.update(y)  # non crea un nuovo set, ma aggiorna quello esistente
+print(x)  # sia update che union escludono gli elementi duplicati
+
+# per lavorare con gli elementi duplicati
+x.intersection_update(y)  # resituisce solo i duplicati (lavora sul set esistente)
+
+z = x.intersection(y)  # restituisce un nuovo set
+
+# per tenere tutto tranne i duplicati
+z = x.symmetric_difference(y)
+
+x.symmetric_difference_update(y)
+
+print(z)
+print(x)
+
 
 
