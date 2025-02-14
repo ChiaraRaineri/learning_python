@@ -230,3 +230,99 @@ print(x)
 
 
 
+#######
+
+# Dictionary
+# collezioni di dati ordinate, modificabili, non permettono duplicati
+# parentesi graffe (coppie chiave e valore)
+
+persona = {
+    "nome": "Luca",
+    "cognome": "Rossi",
+    "eta": 25
+}
+
+print(persona)
+
+# se ci fossero due "eta" per esempio ne metterebbe solo una (no duplicati)
+
+print(type(persona))
+
+
+# accedere agli elementi
+print(persona["cognome"])
+
+print(persona.get("nome"))
+
+print(persona.keys())
+print(persona.values())
+print(persona.items())  # lista di tuple
+
+print("nome" in persona)  # se una chiave esiste
+
+
+# modificare gli elementi
+persona["nome"] = "marco"
+print(persona)
+
+persona.update({"nome": "anna"})
+
+
+# aggiungere elementi
+persona["colore"] = "blu"
+
+persona.update({"colore": "nero"})
+
+
+# rimuovere elementi
+persona.pop("nome")
+
+persona.popitem()  # rimuove l'ultimo elemento
+
+persona.clear() # dict vuoto
+
+# del persona["nome"]
+
+
+# ciclare gli elementi
+for x in persona:
+    print(x)  # manda a schermo la chiave
+
+for x in persona:
+    print(persona[x])  # manda a schermo il valore
+
+for x in persona.values():
+    print(x)
+
+for x in persona.keys():
+    print(x)
+
+for x, y in persona.items():
+    print(x, y)
+
+
+# copiare dict
+
+x = persona.copy()
+print(x)
+
+
+x = dict(persona)
+
+
+# dict annidati
+
+persona = {
+    "nome": "Luca",
+    "cognome": "Rossi",
+    "eta": 25,
+    "indirizzo": {
+        "citta": "milano",
+        "cap": "00000",
+        "civico": 45
+    }
+}
+
+print(persona)
+
+print(persona["indirizzo"]["civico"])
