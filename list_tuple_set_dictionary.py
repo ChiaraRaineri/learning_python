@@ -89,3 +89,69 @@ for citta in y:
 print(x)
 
 x.extend(y)
+
+
+
+#######
+
+# Tuple
+# collezioni di dati ordinati, indicizzate, non modificabili e permettono duplicati
+# parentesi tonde()
+
+
+x = ("milano", "roma", "napoli")
+y = ("milano", True, 56)
+
+print(type(x))
+
+z = ("milano",)  # tupla con un solo valore
+
+print(len(x))
+
+x = tuple(("milano", "roma", "napoli"))  # altro modo di creare una tuple
+
+# usando gli indici possiamo fare le stesse cose delle list
+
+if "milano" in x:
+    print("ok")
+
+
+# non è possibile modificare gli elementi nella tuple
+# c'è un escamotage trasformando la tuple in una lista e ritrasformadola in una tuple
+y = list(x)
+y[0] = "venezia"
+x = tuple(y)
+print(x)
+
+
+# spacchettare una tuple (unpack)
+
+citta = ("milano", "roma", "napoli")
+
+(x, y, z) = citta
+
+print(x)
+print(y)
+print(z)  # se ci fossero altri valori dopo napoli, z diventa una lista con tutti i valori restanti
+
+
+for citta in citta:
+    print(citta)
+
+
+# si possono unire le tuple con + (si crea una nuova tuple)
+
+# count: quante volte un valore si trova nella tupla
+
+lista_citta = ("milano", "roma", "napoli", "udine", "milano")
+
+x = lista_citta.count("milano")
+print(x)
+
+x = lista_citta.index("udine")    # se è presente due volte prende la prima
+print(x)
+
+
+
+
+
