@@ -129,3 +129,65 @@ Persona2.saluta()
 Persona2.nome = "Maria"
 Persona2.saluta()
 
+
+
+#######
+
+# Programmazione a oggetti
+# Ereditarietà
+
+# è il concetto secondo cui una classe figlia che deriva da una classe madre eredità ciò che ha la classe madre più cose aggiuntive
+
+class Persona:
+    def __init__(self, nome, cognome):
+        self.nome = nome
+        self.cognome = cognome
+
+    def saluta(self):
+        print("ciao sono " + self.nome)
+
+
+class Insegnante(Persona):   # questa classe estende Persona (aggiunge cose extra)
+    pass
+
+person1 = Persona("Luca", "Rossi")
+insegnante1 = Insegnante("Anna", "Neri")
+
+person1.saluta()
+insegnante1.saluta()
+
+
+# costruttore della classe figlia
+# overriding: qualsiasi funzione con lo stesso nome verrà sovrascritta
+
+class Insegnante(Persona):
+    def __init__(self, nome, cognome, materia):
+        super().__init__(nome, cognome)
+        self.materia = materia   # è una cosa extra
+        
+
+person1 = Persona("Luca", "Rossi")
+insegnante1 = Insegnante("Anna", "Neri", "Matematica")
+
+insegnante1.saluta()
+
+print(insegnante1.materia)
+
+
+# saluta in modo diverso
+class Insegnante(Persona):
+    def __init__(self, nome, cognome, materia):
+        super().__init__(nome, cognome)
+        self.materia = materia
+
+    def saluta(self):
+        print("buongiorno sono " + self.nome + " " + self.cognome)  # abbiamo fatto overriding
+
+    def dai_voto(self):
+        print("bravo, un bel 8")
+
+
+insegnante1 = Insegnante("Anna", "Neri", "Matematica")
+insegnante1.saluta()
+insegnante1.dai_voto()
+
